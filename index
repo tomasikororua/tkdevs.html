@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fiji | App Testing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #007AFF;
+            --bg: #f5f7fa;
+            --text: #1d1d1f;
+            --card-bg: rgba(255, 255, 255, 0.85);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            background-image: url('https://github.com/tomasikororua.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 { font-weight: 800; font-size: 1.8rem; margin-bottom: 10px; }
+        .subtitle { color: #555; line-height: 1.5; font-size: 0.95rem; margin-bottom: 30px; }
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            margin: 25px 0 15px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .app-icon-img {
+            width: 64px;
+            height: 64px;
+            border-radius: 14px;
+            margin-bottom: 12px;
+            object-fit: cover;
+        }
+
+        h3 { margin: 10px 0 5px; font-size: 1.3rem; }
+        .desc { font-size: 0.85rem; color: #666; margin-bottom: 20px; line-height: 1.4; }
+
+        .btn {
+            display: block;
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+
+        .btn-main { background: var(--primary); color: white; }
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); }
+        .btn:active { transform: scale(0.98); }
+
+        footer { margin-top: 40px; font-size: 0.75rem; color: #888; padding-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="profile-img"></div>
+        <h1>Bula Vinaka! 🇫🇯</h1>
+        <p class="subtitle">I'm a local designer building apps to help the people of Fiji. Join my testing group to try them out!</p>
+    </header>
+
+    <div class="section-title">Step 1: Get Access</div>
+    <div class="card">
+        <h3>Join the Group</h3>
+        <p class="desc">Google Play requires you to join this group first to see the app links.</p>
+        <a href="https://groups.google.com/g/app-tk" class="btn btn-main" target="_blank">Join Testing Group</a>
+    </div>
+
+    <div class="section-title">Step 2: My Local Apps</div>
+
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/tomasikororua/tomasikororua.github.io/main/muse-icon.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3505/3505419.png'" class="app-icon-img" alt="Muse">
+        <h3>Muse App</h3>
+        <p class="desc">A lyric saving app for local artists, featuring an auto-scroll mode for easier practice and performance.</p>
+        <a href="https://play.google.com/apps/testing/com.tomasikororua.muse" class="btn btn-outline" target="_blank">1. Register as Tester</a>
+        <a href="https://play.google.com/store/apps/details?id=com.tomasikororua.muse" class="btn btn-main" target="_blank">2. Download App</a>
+    </div>
+
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/tomasikororua/tomasikororua.github.io/main/vodo-icon.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2898/2898588.png'" class="app-icon-img" alt="Vodo">
+        <h3>Vodo App</h3>
+        <p class="desc">The first Fijian taxi meter app, designed to make local travel fair and transparent for everyone.</p>
+        <a href="https://play.google.com/apps/testing/com.vodo.taxi" class="btn btn-outline" target="_blank">1. Register as Tester</a>
+        <a href="https://play.google.com/store/apps/details?id=com.vodo.taxi" class="btn btn-main" target="_blank">2. Download App</a>
+    </div>
+
+    <footer>
+        <p>Made with 💙 in Fiji <br> &copy; 2026 Tomasikororua Design</p>
+    </footer>
+</div>
+
+</body>
+</html>
